@@ -11,3 +11,4 @@ f.dir<-c(">=","<=",">=")
 f.rhs<-c(0,80,500)
 #solving
 lp("min",f.tujuan,matriks,f.dir,f.rhs,compute.sens = TRUE)
+lp("min",f.tujuan,matriks,f.dir,f.rhs,compute.sens = TRUE)$solution
